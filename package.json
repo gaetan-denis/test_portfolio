@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gaetan-denis/green_trekking/issues"
   },
-  "homepage": "https://github.com/gaetan-denis/green_trekking#readme"
+  "homepage": "https://github.com/gaetan-denis/green_trekking#readme",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
 }
