@@ -1,2 +1,86 @@
 /* Created 05-28-2022 */
+/*mode destop*/
+/* header */
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: black;
+    width:100%;
+    height:10vh;
+    color:white;
+    padding : 0 2rem;
+}
 
+nav{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-between;
+    align-item:center;
+}
+
+h1{
+    font-size:2rem;
+    line-height: 10vh;
+    text-transform: uppercase;
+}
+
+.toggle{
+    display:none
+}
+
+.menu {
+    display:flex;
+    justify-content: space-between;;
+    align-items: center;
+    width:550px;
+}
+
+.menu li a{
+    color:white;
+    text-decoration: none;
+}
+
+@media all and (max-width:991px){
+    .toggle{
+        display:block;
+        font-size : 2rem;
+        cursor: pointer;
+        position:relative;
+        z-index:20;
+    }
+
+    .h1 {
+        position:relative;
+        z-index: 20;
+    }
+
+    .opening {
+        display:block;
+    }
+
+    .closing {
+        display:none;
+    }
+
+    .open .opening {
+        display: none;
+    }
+
+    .open .closing {
+        display:block;
+    }
+
+    .menu{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+        background-color: black;
+        flex-direction:column;
+        padding:2rem;
+        justify-content:space-around;
+    }
+}
