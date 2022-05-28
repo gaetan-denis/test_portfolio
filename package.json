@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gaetan-denis/green_trekking#readme",
   "dependencies": {
+    "@icon/icofont": "^1.0.1-alpha.1",
     "minireset.css": "^0.0.7",
     "sass": "^1.52.1"
   }
