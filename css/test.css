@@ -1,0 +1,109 @@
+/* Created 05-28-2022 */
+
+/* General */
+
+html{
+    font-size:16px;
+}
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: rgb(54, 39, 6);
+    width:100%;
+    height:10vh;
+    color:rgb(233, 229, 214);
+    padding : 0 2rem;
+}
+
+ nav{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+} 
+
+h1 {
+    position:relative;
+    z-index: 20;
+    font-size:2rem;
+    line-height: 10vh;
+    text-transform: uppercase;
+}
+
+.toggle{
+    display:block;
+    font-size : 2rem;
+    cursor: pointer;
+    position:relative;
+    z-index:20;
+}
+
+.menu{
+    align-items:center;
+    border:1px solid black;
+    display:flex;
+    position:absolute;
+    top: 0rem;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-color: rgb(54, 39, 6);
+    flex-direction:column;
+    padding: 2rem;
+    justify-content:space-around;
+    transform: translateX(-100%);
+    transition:transform 1s;
+}
+
+.menu li a{
+    color:rgb(233, 229, 214);
+    text-decoration: none;
+    
+}
+
+/*Burger Menu Gestion*/
+
+.opening {
+    display:block;
+}
+
+.closing {
+    display:none;
+}
+
+.open .opening {
+    display: none;
+}
+
+.open .closing {
+    display:block;
+}
+
+.open .menu {
+transform: translateX(0);
+}
+
+/*Responsive Tablet*/
+
+@media screen and (min-width: 768px) {
+    .toggle{
+        display:none;
+    }
+
+    
+    .menu {
+        display:flex;
+        justify-content: space-between;;
+        align-items: center;
+        width: 768px;
+    }
+  
+    .menu li a{
+            color:white;
+            text-decoration: none;
+        }
+    }
+    
